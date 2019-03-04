@@ -6,4 +6,4 @@ from .models import FitnessModel
 class FitnessForm(forms.ModelForm):
     class Meta:
         model = FitnessModel
-        fields = '__all__'
+        exclude = ['userFK']
